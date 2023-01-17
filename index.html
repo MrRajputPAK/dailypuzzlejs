@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <title>form</title>
+</head>
+<body>
+    <div class="section">
+        <div class="container progressbar">
+            <div class="circle-filled" data-title="Info">
+                <h3 class="circle-heading-filled">1</h3>
+            </div>
+            <div class="circle-unfilled" data-title="Typing">
+                <h3 class="circle-heading-unfilled">2</h3>
+            </div>
+            <div class="circle-unfilled" data-title="Quiz">
+                <h3 class="circle-heading-unfilled">3</h3>
+            </div>
+            <div class="circle-unfilled" data-title="Puzzle">
+                <h3 class="circle-heading-unfilled">4</h3>
+            </div>
+        </div>
+    </div>
+
+
+<!-- .......... FORM .......... -->
+
+<div class="instructions-text">
+    <h1 class="instructions container">You are about to have a quick evaluation on your skills as a front desk team member in a dental office.
+</h1>
+</div>
+
+<div class="main pt-5" style="display: block;">
+    <div class="container d-flex w-100 h-100">
+        <div class="card m-auto" style="width:30rem;">
+            <form class=" text-center w-100 px-4 py-3" id="form">
+            
+                <i class="bi bi-person-fill icons"></i>
+                <h1 class="mt-3 form-heading">Basic Information</h1>
+                <p class="form-text">Please Fill The Following Fields to Save Your Future Results</p>
+                <input type="text" name="name" id="username" class="form-fields alert-show" placeholder="Enter Your Full Name" required="required"><br>
+                <input type="Email" name="email" id="email" aria-describedby="emailHelp" class="form-fields alert-show" placeholder="Enter Your Email Address" required="">
+            <div id="emailHelp" class="form-text text-start mt-0">
+                We'll never share your email with anyone else.
+            </div>
+                <br>
+                <input type="text" id="textarea" class="form-fields" placeholder="Where You Want To Get Results" name="sendResult" required="">
+                <br>
+            <div class="buttn w-100 d-flex justify-content-end">
+                <!-- <input type="submit" class="btn me-3 button" value="Submit"> -->
+    <button  type="submit" id="myBtn" name="submit" class="btn me-3 button" >Submit</button>
+    
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+<div class="section">
+    <div class="container progressbar">
+        <div class="circle-filled" data-title="Info">
+            <h3 class="circle-heading-filled">1</h3>
+        </div>
+        <div class="circle-filled" data-title="Typing">
+            <h3 class="circle-heading-filled">2</h3>
+        </div>
+        <div class="circle-filled" data-title="Quiz">
+            <h3 class="circle-heading-filled">3</h3>
+        </div>
+        <div class="circle-unfilled" data-title="Puzzle">
+            <h3 class="circle-heading-unfilled">4</h3>
+        </div>
+    </div>
+</div>
+<!-- <div class="instructions-text">
+    <h1 class="instructions">Please Grab Pen and Paper To Take Notes</h1>
+</div>  -->
+<div class="main pt-5" style="display: block;">
+    <div class="container flex-column mt-5 d-flex justify-content-center align-items-center">
+            <h3 class="Quiz-heading">Audio Quiz Game</h3>
+        <div class="audio mt-3 text-center">
+            <h2 class="mb-4 main-head">Main Audio</h2>
+            <audio class="audio-play" id="mainaudio" src="https://goodfrontdesk.theskillsleader.com/audio/main.mp3" controls=""></audio>
+            <div class="question-area">
+            <h4 class="mb-4 main-head">Listen the bellow Audio Carefully and Give Answer</h4>
+                <div class="question-score">
+                <div class="question">
+                <audio id="audio" class="audio-play" src="" controls=""></audio>
+                </div>
+                <div class="score">
+                    <h3 class="CorrectAns">Score: 0</h3>
+                </div>
+                </div>
+                <div id="answers" class="answers d-flex gap-5 mt-5 justify-content-center flex-wrap">
+                    <button class="ans-btn" id="a"></button>
+                    <button class="ans-btn" id="b"></button>
+                    <button class="ans-btn" id="c"></button>
+                    <button class="ans-btn" id="d"></button>
+                </div>
+                <div class="nextbtn mt-5 mb-2">
+                    <button class="next" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="back px-5" style="display: none;">
+    <div class="container Typing-result px-5">
+        <div class="Result mt-5 card ">
+            <h1 class="result-text">Result</h1>
+            <div class="textcard px-4 ">
+                <div class="Speed d-flex flex-column justify-content-between">
+                    <h1 class="wpm-text">Your Score is</h1>
+                    <h1 class="SpeedWords" name="speed"></h1>
+                </div>
+                <div class="KeyStrokes d-flex justify-content-between mt-4 px-4">
+                    <h5 class="resultfont">Total Questions</h5>
+                    <h5 class="getKeyStrokes">8</h5>
+                </div>
+                <div class="CorrectWords d-flex justify-content-between mt-2 px-4">
+                    <h5 class="resultfont">Correct Answers</h5>
+                    <h5 class="getC-Words"></h5>
+                </div>
+                <div class="WrongWords d-flex justify-content-between mt-2 px-4">
+                    <h5 class="resultfont">Wrong Answers</h5>
+                    <h5 class="getR-Words">0</h5>
+                </div>
+            </div>
+            
+            <button href="#" type="submit" id="typing_next_page" class="next-btn next_btn_typing">Next</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="quiz.js"></script>
+</html>

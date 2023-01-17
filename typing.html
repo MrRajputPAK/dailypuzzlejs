@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="typing.css">
+    <title>Typing</title>
+</head>
+<body>
+
+    <div class="section">
+        <div class="container progressbar">
+            <div class="circle-filled" data-title="Info">
+                <h3 class="circle-heading-filled">1</h3>
+            </div>
+            <div class="circle-filled" data-title="Typing">
+                <h3 class="circle-heading-filled">2</h3>
+            </div>
+            <div class="circle-unfilled" data-title="Quiz">
+                <h3 class="circle-heading-unfilled">3</h3>
+            </div>
+            <div class="circle-unfilled" data-title="Puzzle">
+                <h3 class="circle-heading-unfilled">4</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="header pt-5">
+        <div class="container mt-5 m-auto">
+            <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="greeting-text">Welcome to Typing Speed Test</h1>
+                <h3 class="main-text">Press Space To Go On The Next Word</h3>
+                <div class="time-counter d-flex gap-5 justify-content-center flex-column align-items-center">
+                    <h2 class="typing-text my-4 ms-3 d-flex flex-wrap gap-1 justify-content-start">
+                    </h2>
+                    <div class="subdiv-time-counter">
+                        <h1 class="Timer" id="timer">01:00</h1>
+                    </div>
+                    <form class="w-100" action="">
+                        <input type="text" id="typedwords" class="typing-area" placeholder="Start Typing here..." >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<div style="background-color:rgb(215, 215, 215); display: none;">
+    <div class="container Typing-result" >
+        <div class="Result">
+            <h1 class="result-text">Result</h1>
+            <div class="Speed d-flex flex-column justify-content-between">
+                <h1 class="SpeedWords" name="speed"></h1>
+                <h1 class="wpm-text">WPM</h1>
+            </div>
+            <div class="KeyStrokes d-flex justify-content-between px-5">
+                <h5>Total KeyStrokes</h5>
+                <h5 class="getKeyStrokes"></h5>
+            </div>
+            <div class="CorrectWords d-flex justify-content-between px-5">
+                <h5>Correct Words</h5>
+                <h5 class="getC-Words"></h5>
+            </div>
+            <div class="WrongWords d-flex justify-content-between px-5">
+                <h5>Wrong Words</h5>
+                <h5 class="getR-Words"></h5>
+            </div>
+            <div class="Accuracy d-flex justify-content-between px-5">
+                <h5>Accuracy</h5>
+                <h5 class="getaccuracy" name="accuracy"></h5>
+            </div>
+            
+            <a href="#" id="typing_next_page" class="next-btn next_btn_typing">Next</a>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="typing.js"></script>
+</html>

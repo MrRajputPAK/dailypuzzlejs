@@ -1,0 +1,198 @@
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 30px 0;
+    background-color: rgb(215, 215, 215);
+}
+
+.Quiz-heading {
+    font-weight: bold;
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    color: rgb(0, 11, 59);
+    box-shadow: 0px 0px 10px 3px rgb(0 11 59);
+}
+
+.main-head {
+    font-weight: bold;
+}
+
+.audio-play {
+    width: 80%;
+    margin: auto;
+}
+
+.question-area {
+    background-color: white;
+    width: 80vw;
+    /* display: flex; */
+    padding: 40px 40px 0 40px;
+    border-radius: 40px 40px 0 0;
+    border-top: 10px solid rgb(0, 11, 59);
+    border-left: 50px solid rgb(0, 11, 59);
+    margin-top: 20px;
+    box-shadow: 5px 7px 30px 0px rgb(0 11 59);
+    transition: all 0.5s ease-in-out;
+}
+
+.question-area:hover {
+    transform: scaleX(1.01);
+}
+
+.question-score {
+    display: flex;
+    gap: 2rem;
+}
+
+.question {
+    display: flex;
+    flex: 4;
+}
+
+.score {
+    display: flex;
+    flex: 1;
+    background-color: rgb(0, 11, 59);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.CorrectAns {
+    background: rgb(0, 11, 59);
+    color: white;
+}
+
+.ans-btn {
+    cursor: pointer;
+    width: 40%;
+    padding: 1rem;
+    font-size: 20px;
+    /* text-transform: capitalize; */
+    font-weight: 700;
+    background: rgb(215, 215, 215);
+    border-radius: 30px;
+    border: none;
+    border-bottom: 8px solid rgb(0, 11, 59);
+    box-shadow: 0px 5px 10px 0px black;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.next {
+    padding: 5px 40px;
+    background-color: rgb(0, 11, 59);
+    color: white;
+    font-size: 24px;
+}
+
+.instructions-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.Result {
+    width: 40%;
+    background-color: white;
+    text-align: center;
+    /* padding: 10px 30px; */
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 0px 0px 15px 2px rgb(0 11 59);
+}
+
+.result-text {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 37px;
+    font-weight: bolder;
+    background: rgb(0, 11, 59);
+    color: white;
+}
+.textcard{
+    font-size: 10px;
+}
+.resultfont{
+    font-size: 20px;
+}
+.Speed {
+    padding-top: 20px;
+    border-bottom: 2px dotted rgb(194, 194, 194);
+    margin: 0 40px;
+}
+
+.next-btn {
+    margin: 20px 80px;
+    background: white;
+    color: rgb(0, 11, 59);
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgb(0 11 59);
+    padding: 2px 0;
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}.Result {
+    width: 38%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 0px 0px 15px 2px rgb(0 11 59);
+}
+.wpm-text{
+    font-size: 35px;
+}
+.result-text {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: bolder;
+    background: rgb(0, 11, 59);
+    color: white;
+}
+.textcard{
+    font-size: 10px;
+}
+.resultfont{
+    font-size: 18px;
+}
+.Speed {
+    padding-top: 20px;
+    border-bottom: 2px dotted rgb(194, 194, 194);
+    margin: 0 40px;
+}
+
+.next-btn {
+    margin: 20px 80px;
+    background: white;
+    color: rgb(0, 11, 59);
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgb(0 11 59);
+    padding: 2px 0;
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(215, 215, 215);
+}
+.Typing-result {
+    background-color: rgb(215, 215, 215);
+    color: rgb(0, 11, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 40px 0;
+}
